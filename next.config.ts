@@ -1,7 +1,7 @@
-
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  webpack: (config) => {
+  webpack: (config: any) => {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
