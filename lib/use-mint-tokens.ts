@@ -9,7 +9,7 @@ import { getContractAddress, TOKEN_ABI } from "../constants";
 
 export interface MintOptions {
   amountDollars: number;
-  network: string;
+  network: string | number;
 }
 
 export function useMintTokens() {
